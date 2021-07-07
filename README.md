@@ -5,21 +5,31 @@ that supports HTTP requests from scratch!
 The server implemented by using three classes:
 WebServer, basic HTTP parser and HTTP.
 
-it support the following requests:
+It supports the following requests:
 
-GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE
+##### GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE
 
 with parameter 'lang' to get "hello world" pages in different languages.
 
+-------------------------------------
+### PROPERTIES OF THE SERVER
 
+In order to change the properties of the server you can go to program.cpp and find the macro definitions:
 
+listen socket port
 
+listen socket queue size
 
+max sockets the server can serve
 
-Testing:
+timeout interval for closing old connections
+
+--------------------------------------
+
+### TESTING
 
 place the html files from 'testing' in c:/temp
-or change curPath variable in HTTP.cpp to the right path.
+**or** change curPath variable in HTTP.cpp to the right path.
 
 use the browser and test the following requests:
 
