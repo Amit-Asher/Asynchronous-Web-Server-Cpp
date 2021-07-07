@@ -1,10 +1,14 @@
 # Web-Server-C++
 Asynchronous single-thread web server in C++
 that supports HTTP requests from scratch!
+
 The server implemented by using three classes:
 WebServer, basic HTTP parser and HTTP.
+
 it support the following requests:
+
 GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE
+
 with parameter 'lang' to get "hello world" pages in different languages.
 
 Testing:
