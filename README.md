@@ -11,7 +11,11 @@ Testing:
 place the html files from 'testing' in c:/temp
 or change curPath variable in HTTP.cpp to the right path.
 use the browser and test the following requests:
+
 http://localhost
+
 http://localhost/site.html?lang=en
+
 http://localhost/site.html?lang=es
+
 http://localhost/site.html?lang=fr
