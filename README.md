@@ -1,4 +1,4 @@
-# Asynchronous Web Server With C++
+# Asynchronous Web Server With C++ 🚀
 Asynchronous single-thread web server in C++
 that supports HTTP requests from scratch!
 
@@ -40,3 +40,5 @@ http://localhost/site.html?lang=en
 http://localhost/site.html?lang=es
 
 http://localhost/site.html?lang=fr
+
+
