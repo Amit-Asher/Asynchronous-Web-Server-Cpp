@@ -44,16 +44,17 @@ PUBLIC string HTTP::PostResponse(string i_Request) {
 
 PUBLIC string HTTP::HeadResponse(string i_Request) {
 
+	string curPath = "C:\\temp\\";
 	string HTTPAppLayer;
 	string source = HTTPParser::GetResource(i_Request);
 	unordered_map<string, string> parameters = HTTPParser::GetParameters(i_Request);
 
 	if (!strcmp(source.c_str(), "/site.html")) {
-		if		(parameters.empty())				   HTTPAppLayer = headHTTPAppLayer("C:\\temp\\en_site.html");
-		else if (!strcmp(parameters[0].c_str(), "en")) HTTPAppLayer = headHTTPAppLayer("C:\\temp\\en_site.html");
-		else if (!strcmp(parameters[0].c_str(), "he")) HTTPAppLayer = headHTTPAppLayer("C:\\temp\\he_site.html");
-		else if (!strcmp(parameters[0].c_str(), "fr")) HTTPAppLayer = headHTTPAppLayer("C:\\temp\\fr_site.html");
-		else										   HTTPAppLayer = headHTTPAppLayer("C:\\temp\\site_404.html");
+		if		(parameters.empty())				   HTTPAppLayer = headHTTPAppLayer(curPath + "en_site.html");
+		else if (!strcmp(parameters[0].c_str(), "en")) HTTPAppLayer = headHTTPAppLayer(curPath + "en_site.html");
+		else if (!strcmp(parameters[0].c_str(), "es")) HTTPAppLayer = headHTTPAppLayer(curPath + "es_site.html");
+		else if (!strcmp(parameters[0].c_str(), "fr")) HTTPAppLayer = headHTTPAppLayer(curPath + "fr_site.html");
+		else										   HTTPAppLayer = headHTTPAppLayer(curPath + "site_404.html");
 	}
 	else {
 		HTTPAppLayer = headHTTPAppLayer("C:\\temp\\site_404.html");
