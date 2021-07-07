@@ -12,6 +12,10 @@ GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE
 with parameter 'lang' to get "hello world" pages in different languages.
 
 
+
+
+
+
 Testing:
 
 place the html files from 'testing' in c:/temp
