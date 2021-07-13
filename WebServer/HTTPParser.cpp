@@ -119,14 +119,14 @@ PUBLIC eHTTP HTTPParser::GetRequestType(string i_Request) {
 		requestType.push_back(curChar);
 	}
 
-	if		(!strcmp(requestType.c_str(), "GET"))		requestTypeToReturn = eHTTP::_GET;
+	if	(!strcmp(requestType.c_str(), "GET"))		requestTypeToReturn = eHTTP::_GET;
 	else if (!strcmp(requestType.c_str(), "POST"))		requestTypeToReturn = eHTTP::_POST;
 	else if (!strcmp(requestType.c_str(), "HEAD")) 		requestTypeToReturn = eHTTP::_HEAD;
 	else if (!strcmp(requestType.c_str(), "OPTIONS")) 	requestTypeToReturn = eHTTP::_OPTIONS;
 	else if (!strcmp(requestType.c_str(), "PUT")) 		requestTypeToReturn = eHTTP::_PUT;
 	else if (!strcmp(requestType.c_str(), "DELETE")) 	requestTypeToReturn = eHTTP::_DELETE;
 	else if (!strcmp(requestType.c_str(), "TRACE")) 	requestTypeToReturn = eHTTP::_TRACE;
-	else 												requestTypeToReturn = eHTTP::_ERROR;
+	else 							requestTypeToReturn = eHTTP::_ERROR;
 
 	return requestTypeToReturn;
 }
