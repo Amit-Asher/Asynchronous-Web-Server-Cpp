@@ -29,7 +29,7 @@ timeout interval for closing old connections
 ### TESTING
 
 place the html files from 'testing' in c:/temp
-**or** change curPath variable in HTTP.cpp to the right path.
+**or** change the variable 'curPath' in HTTP.cpp to the right path.
 
 use the browser and test the following requests:
 
