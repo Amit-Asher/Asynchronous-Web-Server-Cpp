@@ -14,7 +14,7 @@ with parameter 'lang' to get "hello world" pages in different languages.
 -------------------------------------
 ### PROPERTIES OF THE SERVER
 
-In order to change the properties of the server you can go to program.cpp and find the macro definitions:
+In order to change the properties of the server you can edit the macros in program.cpp:
 
 listen socket port
 
